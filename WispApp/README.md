@@ -1,6 +1,10 @@
 # WispApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+# Api's url
+url base: https://{{subdomain}}.smartolt.com/api/
+modificar los datos de cliente: onu/update_location_details/{{onu_external_id}}
+obtener datos del ONU: /onu/get_all_onus_details
 
 ## Development server
 

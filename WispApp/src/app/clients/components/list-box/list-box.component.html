@@ -1,0 +1,39 @@
+<div *ngIf="clients.length === 0; else table" class="alert alert-warning text-center">
+  No hay clientes que mostrar
+</div>
+<ng-template #table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td><button class="btn btn-primary">Ver</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td><button class="btn btn-primary">Ver</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td><button class="btn btn-primary">Ver</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</ng-template>

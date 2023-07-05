@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-export const routes: Routes = []
+import { ClientDetailsComponent } from './pages/client-details/client-details.component';
+import { ClientListComponent } from './pages/client-list/client-list.component';
+
+export const routes: Routes = [{
+    path: 'client-list',
+    component: ClientListComponent //lista de clientes
+},{
+    path: 'client-detail/:id',
+    component: ClientDetailsComponent
+},{
+    path:'**',
+    redirectTo: 'client-list'
+}]
 
 @NgModule({
-    imports:[],
-    exports:[]
+    imports:[
+        RouterModule.forChild(routes)
+    ],
+    exports:[
+        RouterModule
+    ]
 })
 export class ClientRoutingModule {}

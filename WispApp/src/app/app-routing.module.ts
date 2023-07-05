@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home/pages/home/home-page.component';
-import { ClientPageComponent } from './clients/pages/client/client-page.component';
 
 export const routes: Routes = [
     {
@@ -10,7 +9,7 @@ export const routes: Routes = [
         component: HomePageComponent
     },{
         path:'client',
-        component: ClientPageComponent
+        loadChildren: () => import('./clients/clients.module').then(m => m.ClientsModule)
     },{
         path:'**',
         redirectTo: 'home'

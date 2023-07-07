@@ -7,6 +7,7 @@ import { ClientDetailsComponent } from './pages/client-details/client-details.co
 import { SharedModule } from '../shared/shared.module';
 import { ClientListComponent } from './pages/client-list/client-list.component';
 import { ListBoxComponent } from './components/list-box/list-box.component';
+import { CreateClientComponent } from './modals/create-client/create-client.component';
 
 
 
@@ -15,7 +16,8 @@ import { ListBoxComponent } from './components/list-box/list-box.component';
   declarations: [
     ClientDetailsComponent,
     ClientListComponent,
-    ListBoxComponent
+    ListBoxComponent,
+    CreateClientComponent
   ],
   imports: [
     CommonModule,

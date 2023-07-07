@@ -1,13 +1,17 @@
 <h2>Clientes</h2>
 <hr>
 <div class="row">
-    <div class="col">
+    <div class="col-10">
         <shared-search-box (onValue)=" searchClient($event)" placeholder="Busqueda de clientes" ></shared-search-box>
+    </div>
+    <div class="col-2">
+        <button class="btn btn-primary" style="width: 100%;" (click)="abrirModal()">Crear nuevo</button>
     </div>
 </div>
 <hr>
-<div class="row mt-3">
+<div class="row mt-3 form-group">
     <div class="col">
         <client-list-box [clients] ="clients"></client-list-box>
     </div>
 </div>
+<modal-create-client></modal-create-client>

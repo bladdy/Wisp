@@ -2,8 +2,8 @@
 [class.oculto]="clienteService.ocultarModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+      <div class="modal-header" style="background-color: #e3f2fd;">
+        <h5 class="modal-title">Cliente</h5>
         <button type="button" class="btn-close" (click)="cerrarModal()"
         data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -17,13 +17,46 @@
             <label for="inputPassword4" class="form-label">Apellidos</label>
             <input type="text" class="form-control" id="inputPassword4">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">Identificacion</label>
+            <input type="tel" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-4">
+            <label for="inputEmail4" class="form-label">Fecha Naciemiento</label>
+            <input type="date" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">Telefono</label>
+            <input type="tel" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">Whatsapp</label>
+            <input type="tel" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-4">
             <label for="inputEmail4" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputEmail4">
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Telefono</label>
-            <input type="tel" class="form-control" id="inputPassword4">
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label">Pais</label>
+            <select id="inputState" class="form-select">
+              <option selected>Selecciona...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Provicia o Estado</label>
+            <select id="inputState" class="form-select">
+              <option selected>Selecciona...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputZip" class="form-label">Ciudad</label>
+            <select id="inputState" class="form-select">
+              <option selected>Selecciona...</option>
+              <option>...</option>
+            </select>
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">Address</label>
@@ -33,32 +66,27 @@
             <label for="inputAddress2" class="form-label">Address 2</label>
             <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
           </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
+          
+          <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">Latitud</label>
+            <input type="tel" class="form-control" id="inputPassword4">
           </div>
           <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
+            <label for="inputPassword4" class="form-label">Longitud</label>
+            <input type="tel" class="form-control" id="inputPassword4">
           </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-          <div class="col-12">
+          <div class="col-4">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
               <label class="form-check-label" for="gridCheck">
-                Check me out
+                Activo
               </label>
             </div>
           </div>
+         
         </form>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer" style="background-color: #e3f2fd;">
         <button type="button" class="btn btn-success">Aceptar</button>
         <button type="button" class="btn btn-danger" (click)="cerrarModal()"
         data-bs-dismiss="modal">Cancelar</button>

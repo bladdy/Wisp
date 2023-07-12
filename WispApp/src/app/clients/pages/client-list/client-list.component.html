@@ -2,7 +2,11 @@
 <hr>
 <div class="row">
     <div class="col-10">
-        <shared-search-box (onValue)=" searchClient($event)" placeholder="Busqueda de clientes" ></shared-search-box>
+        <!--search box component-->
+        <!--(onValue)=" searchClient($event)" -->
+        <shared-search-box 
+        (onDebounce)="searchClient($event)"
+        placeholder="Busqueda de clientes"></shared-search-box>
     </div>
     <div class="col-2">
         <button class="btn btn-primary" style="width: 100%;" (click)="abrirModal()">Crear nuevo</button>
@@ -11,7 +15,11 @@
 <hr>
 <div class="row mt-3 form-group">
     <div class="col">
+        <!--Loading component-->
+        <share-loading-spinner *ngIf="isLoading"></share-loading-spinner>
+        <!--client list component-->
         <client-list-box [clients] ="clients"></client-list-box>
     </div>
 </div>
+<!--client creat modal-->
 <modal-create-client></modal-create-client>

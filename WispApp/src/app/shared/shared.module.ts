@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
+
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent,
     FooterComponent,
-    SearchBoxComponent
+    HeaderComponent,
+    LoadingSpinnerComponent,
+    SearchBoxComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +23,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
   exports:[
     FooterComponent,
     HeaderComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    LoadingSpinnerComponent
   ]
 })
 export class SharedModule { }
